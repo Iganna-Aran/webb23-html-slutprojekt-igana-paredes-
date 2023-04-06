@@ -1,4 +1,9 @@
-.bod {
+
+:root{
+  --specialWhite: hsl(218, 62.2%, 95%);
+  --RoundedCorner: 55px;
+}
+.body {
   background-color: white;
 }
 .navbar {
@@ -17,11 +22,11 @@
 .navbar-item a {
   display: flex;
   flex-direction: row;
-  background-color: hsl(218, 62.2%, 95%);
+  background-color: var(--specialWhite);
   border-radius: 50px 10px;
   padding: 10px 15px;
   text-decoration: none;
-  color: hsl(218, 62.2%, 95%);
+  color:  var(--specialWhite);
 }
 
 .grid-container {
@@ -38,16 +43,17 @@
 img {
   width: 35%;
   height: 35%;
-  border-radius: 10px;
+  border-radius: var(--RoundedCorner);
 }
 .igana {
-  width: 10%;
+  width: 35%;
   height: 10%;
-  border-radius: 10px;
+  border-radius: var(--RoundedCorner);
   transition-duration: 5000ms;
 }
 .igana:hover {
 transform: rotate(360deg);
+border-radius: var(--RoundedCorner);
 }
 .flex-container {
   display: flex;
@@ -175,8 +181,8 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
   .igana {
-    width: 35%;
-    height: 35%;
+    width: 50%;
+    height: 50%;
     border-radius: 10px;
     padding-bottom: 10px;
   }
